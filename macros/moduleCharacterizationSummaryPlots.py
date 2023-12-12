@@ -1198,7 +1198,7 @@ for enBin in enBins:
       g_deltaT_energyRatioCorr_totRatioCorr_bestTh_vs_bar[vov, enBin].Draw('psame')
       fitRes = ROOT.TF1('fitRes','pol0',0,16)
       g_deltaT_energyRatioCorr_totRatioCorr_bestTh_vs_bar[vov, enBin].Fit(fitRes,'QRN')
-      print 'en.+Tot corr === Vov = %0.02f --> Average tRes = %.01f, spread (RMS) of tRes = %.01f %%'%(vov, fitRes.GetParameter(0), 100*g_deltaT_energyRatioCorr_totRatioCorr_bestTh_vs_bar[vov, enBin].GetRMS(2)/g_deltaT_energyRatioCorr_totRatioCorr_bestTh_vs_bar[vov, enBin].GetMean(2))
+      #print 'en.+Tot corr === Vov = %0.02f --> Average tRes = %.01f, spread (RMS) of tRes = %.01f %%'%(vov, fitRes.GetParameter(0), 100*g_deltaT_energyRatioCorr_totRatioCorr_bestTh_vs_bar[vov, enBin].GetRMS(2)/g_deltaT_energyRatioCorr_totRatioCorr_bestTh_vs_bar[vov, enBin].GetMean(2))
       leg.AddEntry(g_deltaT_energyRatioCorr_totRatioCorr_bestTh_vs_bar[vov, enBin], 'V_{OV}^{eff} = %.02f V'%VovsEff[vov], 'PL')
       outfile.cd()
       g_deltaT_energyRatioCorr_totRatioCorr_bestTh_vs_bar[vov, enBin].Write('g_deltaT_energyRatioCorr_totRatioCorr_bestTh_vs_bar_Vov%.02f_enBin%02d'%(vov, enBin))

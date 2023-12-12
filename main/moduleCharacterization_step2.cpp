@@ -166,7 +166,6 @@ void drawDeltaT(TCanvas *& c, TH1F *histo, TF1 *& fitFunc, std::string xaxis_lab
 int main(int argc, char** argv)
 {
   setTDRStyle();
-  float cpu[2]{0}, mem[2]={0}, vsz[2]={0}, rss[2]={0};
 
   gErrorIgnoreLevel = kError;
   
@@ -183,10 +182,6 @@ int main(int argc, char** argv)
   //--- parse the config file
   CfgManager opts;
   opts.ParseConfigFile(argv[1]);
-  
-  int debugMode = 0;
-  if( argc > 2 ) debugMode = atoi(argv[2]);
-  
   
   //--- get parameters
   std::string plotDir = opts.GetOpt<std::string>("Output.plotDir");

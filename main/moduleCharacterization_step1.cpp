@@ -147,7 +147,7 @@ int main(int argc, char** argv)
       stat(Form("/data1/cmsdaq/tofhir2/h8/raw/%04d/",run), &t_stat);
       //stat(Form("/eos/uscms/store/group/cmstestbeam/2023_03_cmstiming_BTL/TOFHIR/RawData/%s%05d.rawf/",fileBaseName.c_str(),run), &t_stat); // cmslpc
       struct tm * timeinfo = localtime(&t_stat.st_mtime);
-      std::cout << "Time and date of raw file of run" << run << ": " << asctime(timeinfo);
+      //std::cout << "Time and date of raw file of run" << run << ": " << asctime(timeinfo) << std::endl;
     }
   }
   
