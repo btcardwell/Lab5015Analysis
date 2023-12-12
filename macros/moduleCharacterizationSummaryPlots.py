@@ -211,7 +211,19 @@ elif ('818' in args.outFolder):
     goodBars[0.80] = [0,1,2,3,4,5,7,8,9,10,11,12,13]
     goodBars[0.50] = [0,2,3,4,5,7,8,9,10,11,12,13]
 
-if ('528' in args.outFolder):
+elif ('820' in args.outFolder):
+    plots_label = 'HPK (25 #mum, type1) + LYSO818 (prod1, type1)'
+    for vov in Vovs:
+        VovsEff[vov] = vov 
+    goodBars[3.50] = [4,5,6,7,8,9,10,11,12,13]
+    goodBars[2.00] = [4,5,6,7,8,9,10,11,12,13]
+    goodBars[1.50] = [4,5,6,7,8,9,10,11,12,13]
+    goodBars[1.25] = [4,5,6,7,8,9,10,11,12,13]
+    goodBars[1.00] = [4,5,6,7,8,9,10,11,12,13]
+    goodBars[0.80] = [4,5,6,7,8,9,10,11,12,13]
+    goodBars[0.60] = [4,5,6,7,8,9,10,11,12,13]
+
+elif ('528' in args.outFolder):
    plots_label = 'HPK (15#mum) + LYSO528 (prod5, type2)'
    for vov in Vovs:
       VovsEff[vov] = vov 
