@@ -12,12 +12,12 @@
 #python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.04    -ov 2.0        -r  6062    --extraLabel angle52
 
 #config 51.06
-python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 0.6        -r  6064    --extraLabel angle32
-python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 0.8        -r  6064    --extraLabel angle32
-python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 1.0        -r  6064    --extraLabel angle32
-python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 1.25       -r  6064    --extraLabel angle32
-python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 1.5        -r  6064    --extraLabel angle32
-python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 2.0        -r  6064    --extraLabel angle32
+#python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 0.6        -r  6064    --extraLabel angle32
+#python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 0.8        -r  6064    --extraLabel angle32
+#python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 1.0        -r  6064    --extraLabel angle32
+#python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 1.25       -r  6064    --extraLabel angle32
+#python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 1.5        -r  6064    --extraLabel angle32
+#python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.06    -ov 2.0        -r  6064    --extraLabel angle32
 
 #config 51.07
 #python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c config_51.07    -ov 0.6        -r  6066    --extraLabel angle64
@@ -52,5 +52,13 @@ python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO100056    -c co
 #python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO825    -c config_55.01    -ov 1.25       -r  6101  --extraLabel angle52
 #python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO825    -c config_55.01    -ov 1.5        -r  6101  --extraLabel angle52
 #python create_config_TOFHIR2C.py     -t -35     -ml HPK_2E14_LYSO825    -c config_55.01    -ov 2.0        -r  6101  --extraLabel angle52
+
+#config 58.00
+python create_config_TOFHIR2C.py     -t 5     -ml HPK_nonIrr_LYSO820    -c config_58.00    -ov 1.0        -r  6175  --extraLabel angle52
+python create_config_TOFHIR2C.py     -t 5     -ml HPK_nonIrr_LYSO820    -c config_58.00    -ov 1.25       -r  6179  --extraLabel angle52
+python create_config_TOFHIR2C.py     -t 5     -ml HPK_nonIrr_LYSO820    -c config_58.00    -ov 0.8        -r  6186  --extraLabel angle52
+python create_config_TOFHIR2C.py     -t 5     -ml HPK_nonIrr_LYSO820    -c config_58.00    -ov 0.6        -r  6188  --extraLabel angle52
+python create_config_TOFHIR2C.py     -t 5     -ml HPK_nonIrr_LYSO820    -c config_58.00    -ov 1.5        -r  6189  --extraLabel angle52 # also contains 2.0; plan to add by hand
+python create_config_TOFHIR2C.py     -t 5     -ml HPK_nonIrr_LYSO820    -c config_58.00    -ov 3.5        -r  6190,6191  --extraLabel angle52
 
 
