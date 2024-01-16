@@ -180,27 +180,32 @@ plots_label = ''
 print('Vovs:',Vovs)
 print('Bars:',bars)
 
-if ('528' in args.outFolder):
-    plots_label = 'HPK + LYSO528 (prod5, type2)'
+if ('LYSO528' in args.outFolder):
+    plots_label = 'HPK (15 #mum, type2) + LYSO528 (prod5, type2)'
     for vov in Vovs:
         VovsEff[vov] = vov 
-    goodBars[3.50] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14] 
-    goodBars[1.50] = [2,3,4,5,7,8,9,10,11,12,13]
+    goodBars[3.50] = [6,7,8,9,10,11,12,13]
+    goodBars[2.00] = [6,7,8,9,10,11,12,13]
+    goodBars[1.50] = [6,7,8,9,10,11,12,13]
+    goodBars[1.25] = [6,7,8,9,10,11,12,13]
+    goodBars[1.00] = [6,7,8,9,10,11,12,13]
+    goodBars[0.80] = [6,7,8,9,10,11,12,13]
+    goodBars[0.60] = [6,7,8,9,10,11,12,13]
 
-elif ('813' in args.outFolder):
+elif ('LYSO813' in args.outFolder):
     plots_label = 'HPK (25 #mum, type2) + LYSO813 (prod1, type2)'
     for vov in Vovs:
         VovsEff[vov] = vov 
-    goodBars[3.50] = [0,1,2,3,4,5,7,8,9,10,11,12,13]
-    goodBars[2.00] = [0,1,2,3,4,5,7,8,9,10,11,12,13]
-    goodBars[1.50] = [0,1,2,3,4,5,7,8,9,10,11,12,13]
-    goodBars[1.25] = [0,1,2,3,4,5,7,8,9,10,11,12,13]
-    goodBars[1.00] = [0,1,2,3,4,5,7,8,9,10,11,12,13]
-    goodBars[0.80] = [0,1,2,3,4,5,7,8,9,10,11,12,13]
-    goodBars[0.60] = [0,2,3,4,5,7,8,9,10,11,12,13]
-    goodBars[0.50] = [0,2,3,4,5,7,8,9,10,11,12,13]
+    goodBars[3.50] = [6,7,8,9,10,11,12,13]
+    goodBars[2.00] = [6,7,8,9,10,11,12,13]
+    goodBars[1.50] = [6,7,8,9,10,11,12,13]
+    goodBars[1.25] = [6,7,8,9,10,11,12,13]
+    goodBars[1.00] = [6,7,8,9,10,11,12,13]
+    goodBars[0.80] = [6,7,8,9,10,11,12,13]
+    goodBars[0.60] = [6,7,8,9,10,11,12,13]
+    goodBars[0.50] = [6,7,8,9,10,11,12,13]
 
-elif ('818' in args.outFolder):
+elif ('LYSO818' in args.outFolder):
     plots_label = 'HPK (25 #mum, type1) + LYSO818 (prod1, type1)'
     for vov in Vovs:
         VovsEff[vov] = vov 
@@ -211,19 +216,19 @@ elif ('818' in args.outFolder):
     goodBars[0.80] = [0,1,2,3,4,5,7,8,9,10,11,12,13]
     goodBars[0.50] = [0,2,3,4,5,7,8,9,10,11,12,13]
 
-elif ('820' in args.outFolder):
-    plots_label = 'HPK (25 #mum, type1) + LYSO818 (prod1, type1)'
+elif ('LYSO820' in args.outFolder):
+    plots_label = 'HPK (30 #mum, type2) + LYSO820 (prod1, type2)'
     for vov in Vovs:
         VovsEff[vov] = vov 
-    goodBars[3.50] = [4,5,6,7,8,9,10,11,12,13]
-    goodBars[2.00] = [4,5,6,7,8,9,10,11,12,13]
-    goodBars[1.50] = [4,5,6,7,8,9,10,11,12,13]
-    goodBars[1.25] = [4,5,6,7,8,9,10,11,12,13]
-    goodBars[1.00] = [4,5,6,7,8,9,10,11,12,13]
-    goodBars[0.80] = [4,5,6,7,8,9,10,11,12,13]
-    goodBars[0.60] = [4,5,6,7,8,9,10,11,12,13]
+    goodBars[3.50] = [6,7,8,9,10,11,12,13]
+    goodBars[2.00] = [6,7,8,9,10,11,12,13]
+    goodBars[1.50] = [6,7,8,9,10,11,12,13]
+    goodBars[1.25] = [6,7,8,9,10,11,12,13]
+    goodBars[1.00] = [6,7,8,9,10,11,12,13]
+    goodBars[0.80] = [6,7,8,9,10,11,12,13]
+    goodBars[0.60] = [6,7,8,9,10,11,12,13]
 
-elif ('528' in args.outFolder):
+elif ('LYSO528' in args.outFolder):
    plots_label = 'HPK (15#mum) + LYSO528 (prod5, type2)'
    for vov in Vovs:
       VovsEff[vov] = vov 
@@ -295,7 +300,7 @@ elif ('HPK_nonIrr_LYSO813_T15C' in args.outFolder):
          goodBars[0.80] = [0,3,4,5,7,8,9,10,11,12,13,15]
          goodBars[0.60] = [0,3,4,5,7,8,9,11,12,13,15]
 
-elif ('814' in args.outFolder):
+elif ('LYSO814' in args.outFolder):
    plots_label = 'HPK (20 #mum) + LYSO814 (prod1, type2)'
    for vov in Vovs:
       VovsEff[vov] = vov 
@@ -308,7 +313,7 @@ elif ('814' in args.outFolder):
       goodBars[0.80] = [0,3,4,5,7,8,9,10,11,12,13]
       goodBars[0.50] = [0,3,4,5,7,8,9,10,11,12,13]
 
-elif ('824' in args.outFolder):
+elif ('LYSO824' in args.outFolder):
    plots_label = 'HPK (25 #mum, low Cgrid) + LYSO824 (prod5, type2)'
    for vov in Vovs:
       VovsEff[vov] = vov 
