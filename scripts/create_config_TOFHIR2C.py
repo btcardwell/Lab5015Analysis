@@ -11,7 +11,7 @@ import subprocess
 
 # ----
 #cfgFolder = '/afs/cern.ch/user/s/spalluot/MTD/TB_CERN_May23/Lab5015Analysis/cfg'
-cfgFolder = '/afs/cern.ch/work/b/bcardwel/tb_analysis/2023_09_cern/Lab5015Analysis/cfg/TOFHIR2C/'
+cfgFolder = '/afs/cern.ch/user/r/rmenonra/bTB/Lab5015Analysis/cfg/TOFHIR2C/'
 # ----
 
 
