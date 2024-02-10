@@ -155,8 +155,8 @@ bars = []
 thresholds = []
 Vovs = [] 
 for label in label_list:
-    inputFile = None
-    inputFile = ROOT.TFile.Open(inputdir+'/moduleCharacterization_step2_%s.root'%label)
+   # inputFile = None
+    inputFile = ROOT.TFile.Open(inputdir+'/moduleCharacterization_step2_HPK_nonIrr_LYSO820_Vov1.00_T5C_angle52.root')
     listOfKeys = [key.GetName().replace('h1_deltaT_totRatioCorr_','') for key in ROOT.gDirectory.GetListOfKeys() if key.GetName().startswith('h1_deltaT_totRatioCorr_bar')]
     for k in listOfKeys:
         barNum = int (k.split('_')[0][3:5])
@@ -623,7 +623,7 @@ for enBin in enBins:
 for label in label_list:
    print label
    inputFile == None
-   inputFile = ROOT.TFile.Open(inputdir+'/moduleCharacterization_step2_%s.root'%label)
+   inputFile = ROOT.TFile.Open(inputdir+'/moduleCharacterization_step2_HPK_nonIrr_LYSO820_Vov1.00_T5C_angle52.root')
 
    for bar in bars:
       for l in ['L','R','L-R']:
