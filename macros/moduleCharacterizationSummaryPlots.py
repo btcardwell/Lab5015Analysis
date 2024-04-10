@@ -966,8 +966,7 @@ for bar in bars:
     hPadEn1.GetXaxis().SetTitle('threshold [DAC]')
     hPadEn1.Draw()
     cen1.SetGridy()
- 
-    leg = ROOT.TLegend(0.50, 0.50, 0.99, 0.99)
+    leg = ROOT.TLegend(0.70, 0.50, 0.89, 0.99)
     leg.SetBorderSize(0)
     leg.SetFillStyle(0)
    # leg.SetNColumns(4) 
@@ -978,7 +977,7 @@ for bar in bars:
                 g_energy_vs_th[bar, l, vov, refPeak, module].SetMarkerColor(mols[module]) 
                 if (l == 'R'): g_energy_vs_th[bar, l, vov, refPeak,module].SetMarkerColor(mols[module]+1) 
                 g_energy_vs_th[bar, l, vov, refPeak,module].SetLineColor(1)
-                
+                g_energy_vs_th[bar, l, vov, refPeak,module].Draw('plsame') 
                 leg.AddEntry(g_energy_vs_th[bar,l, vov, refPeak,module], '%s,%s, V_{OV}^{eff} = %.02f V'%(module,l,VovsEff[vov]), 'PL')
     leg.SetHeader('Bar %s'%bar)
     leg.Draw()
